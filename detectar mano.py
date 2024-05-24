@@ -16,7 +16,7 @@ def detectaMano():
 
         while True:
             ret, frame = cap.read()
-            if ret == False:
+            if ret == True:
                 break
 
             frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
